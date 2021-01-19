@@ -1,62 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <style>
-        th, td{
-            border-width: 1px;
-            border-style: solid;
-            border-color: black;
-            text-align: center;
-        }
+      th,
+      td {
+        border-width: 1px;
+        border-style: solid;
+        border-color: black;
+        text-align: center;
+      }
     </style>
-</head>
+  </head>
 
-<body>
+  <body>
     <table>
-        <caption><b><em>Weekley Schedule</em></b></caption>
-        <tr>
-            <th></th>
-            <th>Sunday</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-            <th>Saturday</th>
-        </tr>
-        <tr>
-            <th>Morning</th>
-            <td>Mow Lawn</td>
-            <td colspan="5" rowspan="2">Code School</td>
-            <td>Relax</td>
-        </tr>
-        <tr>
-            <th>Afternoon</th>
-            <td>Laundry</td>
-            <td>Homework</td>
-        </tr>
-        <tr>
-            <th>Evening</th>
-            <td>Meal Prep</td>
-            <td colspan="5">Homework</td>
-            <td>Date Night</td>
-        </tr>
+      <caption>
+        <b><em>Weekley Schedule</em></b>
+      </caption>
+      <tr>
+        <th style="background-color: gray"></th>
+        <th>Sunday</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+      </tr>
+      <tr>
+        <th>Morning</th>
+        <td>Mow Lawn</td>
+        <td colspan="5" rowspan="2">Code School</td>
+        <td>Relax</td>
+      </tr>
+      <tr>
+        <th>Afternoon</th>
+        <td>Laundry</td>
+        <td>Homework</td>
+      </tr>
+      <tr>
+        <th>Evening</th>
+        <td>Meal Prep</td>
+        <td colspan="5">Homework</td>
+        <td>Date Night</td>
+      </tr>
     </table>
 
     <section>
-        <header>
-            <h1>House Cleaning Services</h1>
-            <h2>Please fill out the service requirements and contact information</h2>
-        </header>
-        <form>
-            <label for="textarea">Address</label>
-            <input type="textarea" class="container">
-        </form>
+      <header>
+        <h1>House Cleaning Services</h1>
+        <h2>
+          Please fill out the contact information and service requirements
+        </h2>
+      </header>
+      <form>
+        <label for="textarea">Phone Number</label>
+        <input type="textarea" class="container" />
+
+        <h3>Is this a home phone or a cell phone?</h3>
+        <input type="radio" id="contact1" name="phone" value="home" />
+        <label for="contact1">Home</label>
+
+        <input type="radio" id="contact2" name="phone" value="cell" />
+        <label for="contact2">Cell</label>
+
+        <h3>Services You Require</h3>
+        <input
+          type="checkbox"
+          id="service1"
+          name="service"
+          value="carpet steaming"
+        />
+        <label for="service1">Carpet Steaming</label>
+
+        <input
+          type="checkbox"
+          id="service2"
+          name="service"
+          value="appliance cleaning"
+        />
+        <label for="service2">Appliance Cleaning</label>
+
+        <input
+          type="checkbox"
+          id="service3"
+          name="service"
+          value="air duct purging"
+        />
+        <label for="service3">Air Duct Purging</label>
+
+        <h3>What timeframe works best for you?</h3>
+        <label for="timeframe">Timeframe</label>
+        <select name="timeframe" id="timeframe">
+          <option value="8:00am-11:00am">8:00am-11:00am</option>
+          <option value="11:00am-2:00pm">11:00am-2:00pm</option>
+          <option value="2:00pm-5:00pm">2:00pm-5:00pm</option>
+        </select>
+      </form>
     </section>
-    
-</body>
+  </body>
 </html>
