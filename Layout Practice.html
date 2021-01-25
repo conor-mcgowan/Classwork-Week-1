@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      .right-txt {
+        text-align: right;
+      }
+
+      .center-txt {
+        text-align: center;
+      }
+
+      .img-center {
+        display: block;
+        margin-right: auto;
+        margin-top: 10px;
+      }
+
+      .hf-margin {
+        margin-right: 10px;
+      }
+
+      .justify-txt {
+        text-align: justify;
+      }
+
+      .wht-txt {
+        color: white;
+      }
+
+      .txt-shdw {
+        text-shadow: 2px 2px black;
+      }
+
+      .bkgrd-gray {
+        background-color: gray;
+      }
+
+      .bkgrd-slvr {
+        background-color: silver;
+      }
+
+      .flex-row {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .flex-col {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .nav-link {
+        flex-basis: calc(25% - 4px);
+      }
+
+      .nav-link:not(.active):hover {
+        background-color: darkgray;
+      }
+
+      .active {
+        background-color: gray;
+      }
+
+      a {
+        color: darkblue;
+      }
+
+      a:hover {
+        color: blue;
+      }
+
+      .aside {
+        flex-basis: calc(100% / 3);
+      }
+
+      .main {
+        flex-basis: calc(200% / 3);
+      }
+
+      p {
+        margin: 10px 10px;
+        text-align: justify;
+      }
+
+      .footer-image {
+        background-image: url(https://dummyimage.com/150x150/00f7c6/000000&text=backgroundimagbackgroundimagebackgroundimagbackgroundimagebackgroundimagbackgroundimagebackgroundimagbackgroundimagebackgroundimagbackgroundimagebackgroundimagbackgroundimagebackgroundimagbackgroundimage);
+        background-repeat: repeat;
+        background-size: contain;
+      }
+
+      @media (max-width: 600px) {
+        .sml-main {
+          flex-direction: column !important;
+        }
+        .sml-center {
+          margin: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="bkgrd-gray">
+      <h1 class="right-txt wht-txt hf-margin txt-shdw">
+        HUNGRY BEAR FISHERIES
+      </h1>
+      <nav class="flex-row bkgrd-slvr">
+        <div class="nav-link center-txt active">
+          <a href="https://www.wikipedia.org">Our Fish</a>
+        </div>
+        <div class="nav-link center-txt">
+          <a href="https://www.wikipedia.org">Conservation</a>
+        </div>
+        <div class="nav-link center-txt">
+          <a href="https://www.wikipedia.org">About Us</a>
+        </div>
+        <div class="nav-link center-txt">
+          <a href="https://www.wikipedia.org">Contact Us</a>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <div class="flex-row sml-main">
+      <aside class="aside sml-center">
+        <h2>Currently Available</h2>
+        <ul>
+          <li>Atlantic Salmon</li>
+          <li>Coho Salmon</li>
+          <li>Chinook Salmon</li>
+          <li>Sockeye Salmon</li>
+          <li>Pink Salmon</li>
+          <li>Rainbow Trout</li>
+        </ul>
+      </aside>
+      <main class="flex-col main">
+        <div class="flex-row sml-main">
+          <img class="img-center" src=https://dummyimage.com/150x150/000/fff
+          width="150" height="150" />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+            suscipit maximus justo ac rutrum. Integer vitae tristique nibh.
+            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+            posuere cubilia curae; Aliquam commodo mi ut accumsan varius. Nam
+            non suscipit ligula. Pellentesque habitant morbi tristique senectus
+            et netus et malesuada fames ac turpis egestas. Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Sed gravida, quam sed aliquam
+            convallis, sem mi volutpat diam, non hendrerit mauris eros at ante.
+            Phasellus tempus condimentum est quis facilisis. Curabitur congue
+            justo ex, eu molestie sem suscipit ut. Aliquam dignissim, lectus
+            fringilla eleifend tincidunt, nulla est tempor arcu, vel eleifend
+            erat arcu eget augue. Proin varius ut augue eget bibendum. Sed ipsum
+            metus, malesuada et lacinia in, laoreet at erat. Nullam ac congue
+            nisi, sit amet lacinia neque.
+          </p>
+        </div>
+        <br />
+        <div class="flex-row sml-main">
+          <img class="img-center" src=https://dummyimage.com/150x150/000/fff
+          width="150" height="150" />
+          <p>
+            Sed eu rutrum urna. Sed condimentum arcu ac nisi gravida tempor non
+            vitae erat. Curabitur finibus non enim ut scelerisque. Proin posuere
+            in nulla at pulvinar. Curabitur elementum sollicitudin enim ut
+            auctor. Etiam at sollicitudin tellus. Quisque porta dui in dui
+            consequat pellentesque. Cras bibendum non erat quis accumsan. Nullam
+            a iaculis quam. Nam congue accumsan arcu, at semper lacus posuere
+            in. Fusce eu lorem finibus orci hendrerit mollis. Suspendisse
+            lobortis leo ac placerat consequat.
+          </p>
+        </div>
+        <br />
+        <div class="flex-row sml-main">
+          <img class="img-center" src=https://dummyimage.com/150x150/000/fff
+          width="150" height="150" />
+          <p>
+            Curabitur ac dignissim augue, quis volutpat orci. Suspendisse
+            aliquet ex eu nisl tempus feugiat. Class aptent taciti sociosqu ad
+            litora torquent per conubia nostra, per inceptos himenaeos. Etiam
+            pharetra malesuada mi, quis faucibus eros vestibulum ut. Maecenas
+            vitae ultricies massa. Nam aliquet velit ac ipsum facilisis sodales.
+            In id consectetur justo, quis placerat urna. Integer maximus
+            ultrices ultricies. Donec cursus venenatis purus, at venenatis sem
+            varius quis. Aliquam condimentum imperdiet risus et volutpat. Nulla
+            scelerisque venenatis consequat. Mauris erat nulla, tristique mollis
+            laoreet vel, vehicula in urna. Vestibulum mattis aliquam magna.
+          </p>
+        </div>
+        <br />
+      </main>
+    </div>
+    <footer class="bkgrd-gray footer-image" style="height: 45px">
+      <h2 class="right-txt hf-margin">Only the Freshest Fish Around</h2>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

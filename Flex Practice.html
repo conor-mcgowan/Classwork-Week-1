@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        color: white;
+        text-align: center;
+      }
+
+      .hf-properties {
+        height: 75px;
+        background-color: black;
+        font-size: 33px;
+        line-height: 75px;
+      }
+
+      .box-blue {
+        background-color: blue;
+        border: black;
+        border-style: solid;
+        border-width: 2px;
+        margin: 5px;
+        min-height: 100px;
+        flex-basis: calc((100% / 3) - 14px);
+      }
+
+      .box-red {
+        background-color: red;
+        border: black;
+        border-style: solid;
+        border-width: 2px;
+        margin: 5px;
+        min-height: 100px;
+      }
+
+      .main-container {
+        flex-wrap: wrap;
+        flex-basis: 75%
+      }
+
+      .left-container {
+        flex-flow: row wrap;
+        flex-basis: 75%;
+        flex-direction: row wrap;
+      }
+
+      .right-container {
+        flex-basis: 25%;
+        flex-direction: column;
+      }
+
+      .flex{
+          display: flex;
+      }
+
+      .placement-1{
+          order: -6
+      }
+
+      .placement-2{
+          order: -5;
+      }
+
+      .placement-3{
+          order: -4;
+      }
+
+      .placement-4{
+          order: -3;
+      }
+
+      .placement-5{
+          order: -2;
+      }
+
+      .placement{
+          order: -1;
+      }
+
+      @media(max-width:600px){
+        .main-container{
+          flex-basis: 100%;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <header">
+      <h1 class="hf-properties">HEADER</h1>
+    </header>
+    <div class="main-container flex">
+      <div class="left-container flex">
+        <div class="box-blue placement-1">1</div>
+        <div class="box-blue placement-3">2</div>
+        <div class="box-blue placement-6">3</div>
+        <div class="box-blue placement-5">4</div>
+        <div class="box-blue placement-4">5</div>
+        <div class="box-blue placement-2">6</div>
+      </div>
+      <div class="right-container flex">
+        <div class="box-red placement-3">1 </div>
+        <div class="box-red placement-1">2</div>
+        <div class="box-red placement-2">3</div>
+      </div>
+    </div>
+    <footer>
+      <h1 class="hf-properties">Footer</h1>
+    </footer>
+  </body>
+</html>

@@ -6,7 +6,12 @@
     <title>Document</title>
 
     <style>
-      th:not(.noBorder),
+      th:not(.no-border) {
+        border-width: 2px;
+        border-style: solid;
+        border-color: black;
+        text-align: center;
+      }
       td {
         border-width: 1px;
         border-style: solid;
@@ -22,7 +27,7 @@
         <b><em>Weekley Schedule</em></b>
       </caption>
       <tr>
-        <th class="noBorder"></th>
+        <th class="no-border"></th>
         <th>Sunday</th>
         <th>Monday</th>
         <th>Tuesday</th>
@@ -59,7 +64,7 @@
       </header>
       <form>
         <label for="textarea">Phone Number</label>
-        <input type="textarea" class="container" />
+        <input type="textarea" />
 
         <h3>Is this a home phone or a cell phone?</h3>
         <input type="radio" id="contact1" name="phone" value="home" />
@@ -68,12 +73,17 @@
         <input type="radio" id="contact2" name="phone" value="cell" />
         <label for="contact2">Cell</label>
 
+        <div>
+          <label for="textarea">Address</label>
+          <textarea></textarea>
+        </div>
+
         <h3>Services You Require</h3>
         <input
           type="checkbox"
           id="service1"
           name="service"
-          value="carpet steaming"
+          value="carpet-steaming"
         />
         <label for="service1">Carpet Steaming</label>
 
@@ -81,7 +91,7 @@
           type="checkbox"
           id="service2"
           name="service"
-          value="appliance cleaning"
+          value="appliance-cleaning"
         />
         <label for="service2">Appliance Cleaning</label>
 
@@ -89,7 +99,7 @@
           type="checkbox"
           id="service3"
           name="service"
-          value="air duct purging"
+          value="air-duct-purging"
         />
         <label for="service3">Air Duct Purging</label>
 

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .flex {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .box {
+        flex-basis: 10%;
+        box-sizing: border-box;
+        padding-top: 10%;
+      }
+
+      .shadow {
+        box-shadow: 4px 4px 16px darkslategrey inset;
+      }
+
+      .cyan {
+        background-color: cyan;
+      }
+
+      .yellow {
+        background-color: yellow;
+      }
+
+      .orange {
+        background-color: orange;
+      }
+
+      .green {
+        background-color: limegreen;
+      }
+
+      .red {
+        background-color: red;
+      }
+
+      .purple {
+        background-color: darkviolet;
+      }
+
+      .blue {
+        background-color: blue;
+      }
+
+      .black {
+        background-color: black;
+        border: 2px solid black;
+      }
+
+      .top-border {
+        border-top: 2px solid black;
+      }
+
+      .left-border {
+        border-left: 2px solid black;
+      }
+
+      .right-border {
+        border-right: 2px solid black;
+      }
+
+      .bottom-border {
+        border-bottom: 2px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex">
+      <div class="box shadow bottom-border top-border left-border cyan"></div>
+      <div class="box shadow bottom-border top-border cyan"></div>
+      <div class="box shadow bottom-border top-border cyan"></div>
+      <div class="box shadow bottom-border right-border top-border cyan"></div>
+      <div class="box shadow top-border left-border right-border green"></div>
+      <div class="box shadow top-border left-border bottom-border yellow"></div>
+      <div
+        class="box shadow top-border right-border bottom-border yellow"
+      ></div>
+      <div class="box shadow top-border bottom-border left-border purple"></div>
+      <div class="box shadow top-border right-border purple"></div>
+      <div class="box black"></div>
+      <div class="box shadow top-border left-border blue"></div>
+      <div class="box shadow top-border right-border blue"></div>
+      <div class="box shadow left-border top-border right-border orange"></div>
+      <div class="box black"></div>
+      <div class="box shadow left-border bottom-border green"></div>
+      <div class="box shadow right-border top-border green"></div>
+      <div class="box shadow left-border top-border bottom-border red"></div>
+      <div class="box shadow top-border right-border red"></div>
+      <div
+        class="box shadow left-border bottom-border right-border purple"
+      ></div>
+      <div class="box black"></div>
+      <div class="box shadow bottom-border left-border blue"></div>
+      <div class="box shadow bottom-border right-border blue"></div>
+      <div class="box shadow bottom-border left-border orange"></div>
+      <div class="box shadow bottom-border top-border orange"></div>
+      <div
+        class="box shadow bottom-border top-border right-border orange"
+      ></div>
+      <div class="box shadow bottom-border right-border green"></div>
+      <div class="box black"></div>
+      <div class="box shadow bottom-border left-border red"></div>
+      <div class="box shadow bottom-border right-border top-border red"></div>
+      <div
+        class="box shadow bottom-border left-border right-border top-border orange"
+      ></div>
+    </div>
+  </body>
+</html>

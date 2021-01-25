@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .center {
+        margin: auto;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .margin {
+        margin: auto;
+      }
+
+      .img-center {
+        display: block;
+        margin: auto;
+      }
+
+      .input-center {
+        display: block;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      h3 {
+        text-align: center;
+      }
+
+      .profile {
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="center">
+      <h1>Contact Us</h1>
+      <img
+        class="profile img-center"
+        src="https://kansai-resilience-forum.jp/wp-content/uploads/2019/02/IAFOR-Blank-Avatar-Image-1.jpg"
+        alt=""
+        height="100"
+        width="100"
+      />
+      <br />
+      <form class="text-center">
+        <div class="center">
+          <label for="name" class="">Name</label>
+          <input type="text" id="name" />
+        </div>
+        <br />
+        <div class="center">
+          <label for="textarea">Phone Number</label>
+          <input type="textarea" />
+        </div>
+        <div class="text-center">
+          <h3>Is this a cell, home, or business number?</h3>
+          <div class="center">
+            <input type="radio" id="phone1" name="phone" value="cell" />
+            <label for="phone1">Cell</label>
+
+            <input type="radio" id="phone2" name="phone" value="home" />
+            <label for="phone2">Home</label>
+
+            <input type="radio" id="phone3" name="phone" value="business" />
+            <label for="phone3">Business</label>
+          </div>
+        </div>
+        <br />
+        <div class="center">
+          <label for="textarea">Email</label>
+          <input type="textarea" />
+        </div>
+        <br />
+        <div class="center">
+          <label for="textarea">Address</label>
+          <input type="textarea" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
